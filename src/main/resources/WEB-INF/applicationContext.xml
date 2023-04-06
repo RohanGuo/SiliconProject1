@@ -1,0 +1,7 @@
+<!-- Define the ItemViewHelper bean in XML -->
+<bean id="itemViewHelper" class="com.example.demo.ItemViewHelper"/>
+
+<!-- Define the ItemViewService bean in XML and inject the ItemViewHelper bean -->
+<bean id="itemViewService" class="com.example.demo.ItemViewService">
+    <property name="itemViewHelper" ref="itemViewHelper"/>
+</bean>
